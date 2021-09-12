@@ -1,0 +1,218 @@
+@font-face {
+  font-family: CavasOnline;
+  src: url(fonts/Poppins-Regular.ttf);
+}
+:root {
+  --color-primario: #c41732;
+  --color-segundario: #caaa78;
+  --color-terciario: #fff;
+  --color-neutro: #303030;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: CavasOnline;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+
+  box-sizing: border-box;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+video {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  object-fit: cover;
+  z-index: 0;
+}
+.cabeza-login {
+  margin: 5% 0 50px;
+}
+.contenedor {
+  position: fixed;
+  display: flex;
+  z-index: 2;
+}
+.login img {
+  width: 70%;
+  margin: 0 auto;
+}
+.login {
+  padding: 25% 20px;
+  background: rgba(255, 255, 255, 0.6);
+  width: 500px;
+  height: 100vh;
+  text-align: center;
+  /* padding-top: 25%; */
+}
+.login form {
+  width: 100%;
+}
+.login h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: var(--color-primario);
+}
+.login h2 {
+  font-size: 25px;
+  color: #343434;
+}
+.login a {
+  color: #343434;
+  text-decoration: none;
+  display: block;
+  transition: text-decoration ease 0.5s;
+}
+
+.login a:hover {
+  text-decoration: underline;
+  color: var(--color-primario);
+}
+.login input {
+  width: 100%;
+  text-align: center;
+  height: 35px;
+  border: 0;
+  border-radius: 20px;
+  margin: 5px 0;
+}
+
+.login input[type="submit"] {
+  background: var(--color-primario);
+  color: var(--color-terciario);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.publicidad {
+  position: absolute;
+  right: 0;
+  color: var(--color-terciario);
+  z-index: 2;
+  font-size: 5em;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  width: 50%;
+  text-align: right;
+}
+
+@media (max-width: 1020px) {
+  /* Login */
+  .login img {
+    width: 20%;
+    margin: 0 auto;
+  }
+  .cabeza-login {
+    margin: 50px 0;
+  }
+  .publicidad {
+    display: none;
+  }
+  .contenedor {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+  }
+  .login img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .login {
+    padding: auto 50px;
+    background: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    padding-top: 20px;
+    margin: 20px;
+  }
+  /* / Login */
+}
+
+@media (max-width: 1024px) {
+  /* Login */
+  .publicidad {
+    padding-right: 2px;
+  }
+  /* / Login */
+}
+
+/* Escritorio */
+#escritorio .dropdown-item:hover{
+  background-color: var(--color-primario);
+  color: var(--color-terciario);
+}
+/* Menu de Atributos */
+.opciones {
+  background-color: var(--color-segundario);
+  color: var(--color-terciario);
+}
+.opciones button {
+  text-align: center;
+}
+.menu-usuario-atributos button {
+  width: 100%;
+  margin: 0.5rem 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+/* / Menu de Atributos */
+
+/* Pagina de Contenido */
+#pagina {
+   min-height: calc(100vh - 57.09px - 178px - 50px);
+}
+.contenido {
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  height: auto;
+  padding: 10px !important;
+  
+}
+/* Pagina de Contenido */
+
+/*  Pie de Pagina */
+footer .pie-de-pagina {
+  background-color: var(--color-primario);
+  color: var(--color-terciario);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* / Pie de Pagina */
+/* SlideShow */
+#slideshow img {
+  max-height: 250px;
+  width: 100%;
+}
+/* / Slide Show */
+
+/* Login */
+.salir {
+  color:  var(--color-primario);
+}
+.salir:hover {
+  color:  var(--color-segundario);
+}
+/* / Login */

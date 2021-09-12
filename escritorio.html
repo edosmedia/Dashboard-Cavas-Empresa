@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/cv-empresas/main.css" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <title>Escritorio</title>
+  </head>
+  <body id="escritorio">
+    <!-- Cabecera -->
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="" width="200px" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar" />
+          <button class="btn btn-danger my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+        <form class="form-inline">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10s10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z" fill="#c41732"/><rect x="0" y="0" width="24" height="24" fill="rgba(0, 0, 0, 0)" /></svg>
+          <div class="d-block">
+            Eduardo Medrano - <a href="#" class="salir" ><strong>Salir?</strong></a></div>
+        </form>
+      </div>
+    </nav>
+    </header>
+    <!-- / Cabecera -->
+    <section id="slideshow">
+      <img class="d-lg-none d-xxl-none d-md-none"  src="https://via.placeholder.com/768x500" alt="">
+      <img class="d-none d-sm-block"  src="https://via.placeholder.com/1920x250" alt="">
+    </section>
+    <!-- Pagina -->
+    <section id="pagina">
+    <div class="row  mx-0">
+
+      <!-- Menu de Atributos -->
+      <div class="col-md-2 col-xs-8 px-0 text-center">
+          <select class="form-control mt-2" id="Empresas">
+          <option value="" selected disabled >Selecione una Empresa</option>
+          <option value="" >Empresa Cavas 1</option>
+          <option value="" >Empresa Cavas 2</option>
+          <option value="" >Empresa Cavas 3</option>
+          <option value="" >Empresa Cavas 4</option>
+          <option value="" >Empresa Cavas 5</option>
+        </select>
+      <a class="btn opciones my-2 d-lg-none d-xxl-none d-md-none" data-toggle="collapse" href="#menu-seccion" role="button" aria-expanded="false" aria-controls="collapseExample">Ver o Ocultar mas Opciones</a>
+        <div class="menu-usuario-atributos" data-toggle="collapse" id="menu-seccion">
+          <button class="btn btn-danger my-2 my-sm-0" type="button">Atributo 1</button>
+          <button class="btn btn-danger my-2 my-sm-0" type="button">Atributo 1</button>
+          <button class="btn btn-danger my-2 my-sm-0" type="button">Atributo 1</button>
+          <button class="btn btn-danger my-2 my-sm-0" type="button">Atributo 1</button>
+          <button class="btn btn-danger my-2 my-sm-0" type="button">Atributo 1</button>
+        </div>
+      </div>
+      <!-- / Menu de Atributos -->
+
+           <div class="col-md-10 " id="contenido">
+             <!-- Titulo -->
+            <h1>Titulo</h1>
+             <!-- Titulo -->
+             <!-- Contenido -->
+        <div class="contenido">
+          Esto es un texto prueba para cavasonline
+        </div>
+      </div>
+      <!-- / Contenido -->
+    </div>
+    <!-- / Cuerpo de pagina -->
+    </section>
+    <!-- / Seccion de Pagina -->
+
+     <!-- / Pagina -->
+    <!-- Pie de Pagina -->
+    <footer>
+    <div class="row mx-0">
+      <div class="col-md-12 text-center pie-de-pagina">
+        &nbsp; <span id="empresa"> </span> &nbsp; - RUT 96.856.980-5 | © &nbsp; <span id="YY"> </span> &nbsp; CAVAONLINE
+      </div>
+    </div>
+    </footer>
+    <!-- / Pie de Pagina -->
+    <script src="js/complementos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
